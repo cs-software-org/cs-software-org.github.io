@@ -2,157 +2,267 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>CS Software | Free, Private Mobile Apps</title>
 		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+			name="description"
+			content="CS Software - Free, privacy-respecting mobile apps for everyone."
 		/>
-		<meta name="description" content="" />
-		<meta name="author" content="" />
-		<link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
-
-		<title>
-			CS Software | Mobile Apps | Touch Roulette - Decision Maker | Android App
-		</title>
-
-		<!-- Bootstrap core CSS -->
+		<meta name="author" content="CS Software" />
+		<link rel="icon" href="images/touch-roulette-v1-icon.avif" />
 		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 			crossorigin="anonymous"
 		/>
-
-		<!-- Custom styles for this template -->
-		<link href="album.css" rel="stylesheet" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+			rel="stylesheet"
+		/>
+		<style>
+			body {
+				background: #f4f6fb;
+				font-family: "Inter", "Segoe UI", Arial, sans-serif;
+			}
+			.hero {
+				background: linear-gradient(120deg, #0d6efd 0%, #6ea8fe 100%);
+				color: #fff;
+				padding: 5rem 0 4rem 0;
+				text-align: center;
+				position: relative;
+				overflow: hidden;
+			}
+			.hero::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80")
+					center/cover no-repeat;
+				opacity: 0.13;
+				z-index: 0;
+			}
+			.hero > .container {
+				position: relative;
+				z-index: 1;
+			}
+			.hero h1 {
+				font-size: 3rem;
+				font-weight: 800;
+				margin-bottom: 1.2rem;
+				text-shadow: 0 2px 16px rgba(0, 0, 0, 0.13);
+			}
+			.hero p {
+				font-size: 1.25rem;
+				margin-bottom: 2.2rem;
+				font-weight: 500;
+				text-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+			}
+			.app-card {
+				box-shadow: 0 4px 32px rgba(0, 0, 0, 0.1);
+				border-radius: 1.25rem;
+				background: #fff;
+				border: none;
+				transition:
+					box-shadow 0.25s,
+					transform 0.18s;
+				overflow: hidden;
+				position: relative;
+			}
+			.app-card:hover {
+				box-shadow: 0 8px 48px rgba(0, 0, 0, 0.18);
+				transform: translateY(-4px) scale(1.025);
+			}
+			.app-card img {
+				border-top-left-radius: 1.25rem;
+				border-top-right-radius: 1.25rem;
+				max-height: 220px;
+				object-fit: cover;
+				width: 100%;
+				background: #e9ecef;
+			}
+			.app-card h4 {
+				font-size: 1.35rem;
+				font-weight: 700;
+				margin-bottom: 0.5rem;
+				color: #0d6efd;
+			}
+			.app-card p {
+				font-size: 1.05rem;
+				color: #6c757d;
+				margin-bottom: 1.5rem;
+			}
+			.btn-store {
+				min-width: 150px;
+				font-size: 1.05rem;
+				border-radius: 2rem;
+				box-shadow: 0 2px 8px rgba(13, 110, 253, 0.07);
+				font-weight: 600;
+				letter-spacing: 0.01em;
+				margin: 0 0.25rem;
+				transition:
+					background 0.18s,
+					color 0.18s,
+					box-shadow 0.18s;
+			}
+			.btn-store:disabled,
+			.btn-store.disabled {
+				opacity: 0.7;
+				background: #e9ecef !important;
+				color: #adb5bd !important;
+				border: none;
+			}
+			.footer {
+				background: #f8f9fa;
+				border-top: 1px solid #e9ecef;
+				margin-top: 4rem;
+				padding: 2.5rem 0 1.2rem 0;
+			}
+			.footer a {
+				text-decoration: none;
+				font-weight: 500;
+				margin: 0 0.5rem;
+			}
+			.footer a:hover {
+				text-decoration: underline;
+			}
+			@media (max-width: 767px) {
+				.hero h1 {
+					font-size: 2.1rem;
+				}
+				.app-card {
+					border-radius: 1rem;
+				}
+				.app-card img {
+					border-top-left-radius: 1rem;
+					border-top-right-radius: 1rem;
+				}
+			}
+		</style>
 	</head>
-
 	<body>
 		<header>
-			<div class="collapse bg-dark" id="navbarHeader">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
 				<div class="container">
-					<div class="row">
-						<div class="col-sm-8 col-md-7 py-4">
-							<h4 class="text-white">About</h4>
-							<p class="text-muted">
-								Add some information about the album below, the author, or any
-								other background context. Make it a few sentences long so folks
-								can pick up some informative tidbits. Then, link them off to
-								some social networking sites or contact information.
-							</p>
-						</div>
-						<div class="col-sm-4 offset-md-1 py-4">
-							<h4 class="text-white">Contact</h4>
-							<ul class="list-unstyled">
-								<li><a href="#" class="text-white">Follow on Twitter</a></li>
-								<li><a href="#" class="text-white">Like on Facebook</a></li>
-								<li><a href="#" class="text-white">Email me</a></li>
-							</ul>
-						</div>
+					<a class="navbar-brand fw-bold" href="#">
+						<i class="bi bi-app-indicator me-2"></i>CS Software
+					</a>
+					<div class="d-flex align-items-center gap-3">
+						<a
+							href="https://buymeacoffee.com/carlossantana"
+							class="btn btn-warning btn-sm me-2"
+							target="_blank"
+							rel="noopener"
+						>
+							<i class="bi bi-cup-hot-fill me-1"></i> Buy me a coffee
+						</a>
+						<a
+							href="mailto:cssoftware3279@gmail.com"
+							class="btn btn-outline-light btn-sm"
+						>
+							<i class="bi bi-envelope-fill me-1"></i> Email
+						</a>
 					</div>
 				</div>
-			</div>
-			<div class="navbar navbar-dark bg-dark box-shadow">
-				<div class="container d-flex justify-content-between">
-					<a href="#" class="navbar-brand d-flex align-items-center">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="20"
-							height="20"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="mr-2"
-						>
-							<path
-								d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
-							></path>
-							<circle cx="12" cy="13" r="4"></circle>
-						</svg>
-						<strong>Album</strong>
-					</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-toggle="collapse"
-						data-target="#navbarHeader"
-						aria-controls="navbarHeader"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-				</div>
-			</div>
+			</nav>
 		</header>
 
-		<main role="main">
-			<section class="jumbotron text-center">
-				<div class="container">
-					<h1 class="jumbotron-heading">CS Software</h1>
-					<p class="lead text-muted">
-						Simple, easy-to-use, and value-adding apps!
-					</p>
-					<p>
-						<a href="#" class="btn btn-primary my-2">Support</a>
-					</p>
-				</div>
-			</section>
-
+		<section class="hero">
 			<div class="container">
-				<h1 class="text-center">Touch Roulette Decision Maker Android App</h1>
-				<div class="row">
-					<div class="col-4 mx-auto text-center">
+				<h1>Free, Private, Accessible Apps</h1>
+				<p>
+					At CS Software, we believe in building simple, easy-to-use apps that
+					respect your privacy.<br />
+					We do <strong>not</strong> collect or store your personal data, and
+					our apps are <strong>free for everyone</strong>.
+				</p>
+				<div class="d-flex justify-content-center gap-3 flex-wrap">
+					<a
+						href="https://buymeacoffee.com/carlossantana"
+						class="btn btn-warning btn-lg"
+						target="_blank"
+						rel="noopener"
+					>
+						<i class="bi bi-cup-hot-fill me-2"></i>Support my work
+					</a>
+					<a
+						href="mailto:cssoftware3279@gmail.com"
+						class="btn btn-outline-light btn-lg"
+					>
+						<i class="bi bi-envelope-fill me-2"></i>Contact
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<main class="container my-5">
+			<h2 class="text-center mb-5">Our Apps</h2>
+			<div class="row justify-content-center">
+				<!-- Touch Roulette App Card -->
+				<div class="col-md-6 col-lg-4 mb-4">
+					<div class="app-card h-100">
 						<img
-							src="https://icon-library.com/images/app-development-icon/app-development-icon-13.jpg"
-							class="img-fluid"
-							alt="Responsive image"
+							src="images/touch-roulette-v1-icon.avif"
+							class="w-100"
+							alt="Touch Roulette App Icon"
 						/>
-						<p>Here is the descriptoin of the android app!!</p>
+						<div class="p-4 text-center">
+							<h4 class="fw-bold mb-2">Touch Roulette</h4>
+							<p class="text-muted mb-4">
+								A fun, simple decision maker for groups. Let fate decide with a
+								tap!
+							</p>
+							<div class="d-flex justify-content-center gap-2">
+								<a
+									href="#"
+									class="btn btn-store btn-dark disabled"
+									tabindex="-1"
+									aria-disabled="true"
+								>
+									<i class="bi bi-apple me-1"></i> iOS Coming Soon
+								</a>
+								<a
+									href="#"
+									class="btn btn-store btn-success disabled"
+									tabindex="-1"
+									aria-disabled="true"
+								>
+									<i class="bi bi-google-play me-1"></i> Android Coming Soon
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
+				<!-- Add more app cards here in the future -->
 			</div>
 		</main>
 
-		<footer class="text-muted">
+		<footer class="footer text-center">
 			<div class="container">
-				<p class="float-right">
-					<a href="#">Back to top</a>
-				</p>
-				<p>
-					Album example is &copy; Bootstrap, but please download and customize
-					it for yourself!
-				</p>
-				<p>
-					New to Bootstrap? <a href="../../">Visit the homepage</a> or read our
-					<a href="../../getting-started/">getting started guide</a>.
-				</p>
+				<div class="mb-3">
+					<a
+						href="https://buymeacoffee.com/carlossantana"
+						class="text-warning"
+						target="_blank"
+						rel="noopener"
+					>
+						<i class="bi bi-cup-hot-fill"></i> Buy me a coffee
+					</a>
+					<span class="mx-2">|</span>
+					<a href="mailto:cssoftware3279@gmail.com" class="text-primary">
+						<i class="bi bi-envelope-fill"></i> cssoftware3279@gmail.com
+					</a>
+				</div>
+				<small class="text-muted"
+					>&copy; 2026 CS Software. All rights reserved.</small
+				>
 			</div>
 		</footer>
 
-		<!-- Bootstrap core JavaScript
-    ================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
 		<script
-			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 			crossorigin="anonymous"
 		></script>
 	</body>
