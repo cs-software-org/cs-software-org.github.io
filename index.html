@@ -6,9 +6,45 @@
 		<title>CS Software | Free, Private Mobile Apps</title>
 		<meta
 			name="description"
-			content="CS Software - Free, privacy-respecting mobile apps for everyone."
+			content="Download Touch Roulette – the free random finger picker app for Android. Place fingers on screen and let the app choose a winner. No ads, no subscriptions, no data collected."
 		/>
 		<meta name="author" content="CS Software" />
+		<meta name="robots" content="index, follow" />
+		<meta
+			name="keywords"
+			content="touch roulette, random picker app, finger picker app, who goes first app, decision maker app, free android app, random selector, privacy app"
+		/>
+		<link rel="canonical" href="https://cs-software-org.github.io/" />
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://cs-software-org.github.io/" />
+		<meta property="og:site_name" content="CS Software" />
+		<meta
+			property="og:title"
+			content="Touch Roulette – Free Random Finger Picker App for Android"
+		/>
+		<meta
+			property="og:description"
+			content="Place your fingers on screen and let Touch Roulette pick a random winner. Free, no ads, no data collected. Available now on Google Play."
+		/>
+		<meta
+			property="og:image"
+			content="https://cs-software-org.github.io/images/touch_roulette_app_icon.png"
+		/>
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:title"
+			content="Touch Roulette – Free Random Finger Picker App for Android"
+		/>
+		<meta
+			name="twitter:description"
+			content="Place your fingers on screen and let Touch Roulette pick a random winner. Free, no ads, no data collected. On Google Play now."
+		/>
+		<meta
+			name="twitter:image"
+			content="https://cs-software-org.github.io/images/touch_roulette_app_icon.png"
+		/>
 		<link rel="icon" href="images/touch-roulette-v1-icon.avif" />
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -153,8 +189,9 @@
 				border-top-left-radius: 1.25rem;
 				border-top-right-radius: 1.25rem;
 				max-height: 200px;
-				object-fit: cover;
+				object-fit: contain;
 				width: 100%;
+				padding: 1.5rem;
 				background: #e9ecef;
 			}
 			.app-card h4 {
@@ -264,6 +301,27 @@
 
 			gtag("config", "G-Q80ZW6TWPV");
 		</script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "SoftwareApplication",
+				"name": "Touch Roulette",
+				"operatingSystem": "Android",
+				"applicationCategory": "GameApplication",
+				"offers": {
+					"@type": "Offer",
+					"price": "0",
+					"priceCurrency": "USD"
+				},
+				"description": "Touch Roulette is a free random finger picker app for Android. Place your fingers on the screen and let the app randomly choose a winner – perfect for game nights, classrooms, teams, and groups. No ads. No data collected.",
+				"url": "https://play.google.com/store/apps/details?id=com.gmail.cssoftware3279.Touch_Roulette",
+				"author": {
+					"@type": "Organization",
+					"name": "CS Software",
+					"url": "https://cs-software-org.github.io/"
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<header>
@@ -299,7 +357,8 @@
 				</div>
 			</nav>
 		</header>
-		<div style="margin: 0 auto; text-align: center">
+		<!-- adsterra banner -->
+		<!-- <div style="margin: 0 auto; text-align: center">
 			<script>
 				atOptions = {
 					key: "754e42bf56e768e7f30c06f930eb622c",
@@ -310,7 +369,7 @@
 				};
 			</script>
 			<script src="https://www.highperformanceformat.com/754e42bf56e768e7f30c06f930eb622c/invoke.js"></script>
-		</div>
+		</div> -->
 
 		<section class="hero">
 			<div class="container">
@@ -396,19 +455,23 @@
 				<div class="col-md-6 col-lg-4 mb-4">
 					<div class="app-card h-100">
 						<img
-							src="images/touch-roulette-v1-icon.avif"
+							src="images/touch_roulette_app_icon.png"
 							class="w-100"
-							alt="Touch Roulette App Icon"
+							alt="Touch Roulette – Free Random Finger Picker App for Android"
 						/>
 						<div class="p-4 text-center">
 							<h4>Touch Roulette</h4>
-							<span class="badge bg-primary bg-opacity-10 text-primary mb-3"
-								>Decision Maker</span
-							>
+							<div class="d-flex justify-content-center gap-2 flex-wrap mb-3">
+								<span class="badge bg-primary bg-opacity-10 text-primary"
+									>Decision Maker</span
+								>
+								<span class="badge bg-success">Now on Android</span>
+							</div>
 							<p>
-								Can't decide who goes first? Touch Roulette picks for you. Just
-								place your fingers on the screen and let the app choose &mdash;
-								perfect for game nights, teams, and groups.
+								Can't decide who goes first? Touch Roulette is a free random
+								finger picker app &mdash; place your fingers on the screen and
+								let the app randomly choose a winner. Perfect for game nights,
+								classrooms, teams, and groups. No ads. No data collected.
 							</p>
 							<div class="d-flex justify-content-center gap-2 flex-wrap">
 								<a
@@ -420,12 +483,13 @@
 									<i class="bi bi-apple me-1"></i> iOS &middot; Soon
 								</a>
 								<a
-									href="#"
-									class="btn btn-store btn-outline-success disabled"
-									tabindex="-1"
-									aria-disabled="true"
+									href="https://play.google.com/store/apps/details?id=com.gmail.cssoftware3279.Touch_Roulette"
+									class="btn btn-store btn-success"
+									target="_blank"
+									rel="noopener"
+									aria-label="Download Touch Roulette on Google Play"
 								>
-									<i class="bi bi-google-play me-1"></i> Android &middot; Soon
+									<i class="bi bi-google-play me-1"></i> Google Play
 								</a>
 							</div>
 						</div>
@@ -471,6 +535,7 @@
 			crossorigin="anonymous"
 		></script>
 
-		<script src="https://pl28853104.effectivegatecpm.com/54/25/e2/5425e2b040f4ae317b53c4fef7e0dd6c.js"></script>
+		<!-- Adsterra social -->
+		<!-- <script src="https://pl28853104.effectivegatecpm.com/54/25/e2/5425e2b040f4ae317b53c4fef7e0dd6c.js"></script> -->
 	</body>
 </html>
