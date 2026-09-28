@@ -1,0 +1,19 @@
+# CS Software
+
+> CS Software is an independent, one-person software studio that makes simple, focused mobile apps. Its first app, Touch Roulette, is a random finger picker for Android with more than 1 million downloads on Google Play. The apps are free to download, need no sign-up, and Google Play's Data safety section lists no data collected.
+
+On Google Play, the developer is listed as "CS-Software" and the app as "Touch Roulette Decision Maker".
+
+## Apps
+
+- [Touch Roulette](https://cs-software-org.github.io/touch-roulette/): A random group picker and decision maker for Android. Everyone places a finger on the screen and the app randomly selects one person. Four modes: Classic (pick one person), Team (split into two random teams, Red vs Blue), Pairs (pair everyone up at random) and Ranked (rank everyone from first to last); Team and Pairs need an even number of fingers. Free to download on [Google Play](https://play.google.com/store/apps/details?id=com.gmail.cssoftware3279.Touch_Roulette); contains ads; Google Play Data safety lists no data collected and no data shared. Rated Everyone. An iPhone version is not yet available.
+
+## Company
+
+- [Home](https://cs-software-org.github.io/): What CS Software makes and what it cares about: simple design, careful craft and respect for users' time and privacy.
+- [Privacy Policy](https://cs-software-org.github.io/privacy.html): How CS Software's apps and website handle data.
+
+## Contact
+
+- [Email](mailto:cssoftware3279@gmail.com): Questions, feedback and support
+- [Google Play developer page](https://play.google.com/store/apps/dev?id=5458143026124432912): All CS Software apps on Google Play
